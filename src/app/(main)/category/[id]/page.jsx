@@ -1,19 +1,22 @@
 import LeftsideBar from '@/components/homepage/LeftsideBar';
 import RightsideBar from '@/components/homepage/RightsideBar';
+import { getCategories, getNewsByCategoryId } from '@/lib/data';
 import React from 'react';
 
 
-async function getCategories() {
-  const res = await fetch('https://openapi.programming-hero.com/api/news/categories');
-  const data = await res.json();
-  return data;
-}
 
-async function getNewsByCategoryId(category_id) {
-  const res = await fetch(`https://openapi.programming-hero.com/api/news/category/${category_id}`);
-  const data = await res.json();
-  return data.data;
-}
+//  async function getCategories() {
+//   const res = await fetch('https://openapi.programming-hero.com/api/news/categories');
+//   const data = await res.json();
+//   return data;
+// }
+
+//  async function getNewsByCategoryId(category_id) {
+//   const res = await fetch(`https://openapi.programming-hero.com/api/news/category/${category_id}`);
+//   const data = await res.json();
+//   return data.data;
+// }         egulu lib folder e rakha hoyeche oraganized rakhar jnno
+
 
 const NewsCategory = async({params}) => {
     const {id} = await params;
