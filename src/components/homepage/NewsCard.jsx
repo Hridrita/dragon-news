@@ -42,12 +42,14 @@ const NewsCard = ({ n }) => {
           />
         </figure>
 
-        <p className="line-clamp-4 text-[#706f6f]">{n.details}</p>
+        <p className="truncate text-[#706f6f]">{n.details}</p>
 
         <div>
           <Link href={`/news/${n._id}`}>
             <button className="text-orange-500 font-bold">Read More</button>
           </Link>
+
+          
 
           <div className="flex justify-between items-center text-center mt-5">
             <div className="flex gap-3 items-center">
