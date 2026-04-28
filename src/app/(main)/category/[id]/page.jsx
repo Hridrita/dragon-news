@@ -5,7 +5,6 @@ import { getCategories, getNewsByCategoryId } from '@/lib/data';
 import React from 'react';
 
 
-
 //  async function getCategories() {
 //   const res = await fetch('https://openapi.programming-hero.com/api/news/categories');
 //   const data = await res.json();

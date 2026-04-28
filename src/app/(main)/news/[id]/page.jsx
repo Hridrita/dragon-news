@@ -6,6 +6,18 @@ import { BsArrowUpRight } from 'react-icons/bs';
 import { CiBookmark, CiShare2 } from 'react-icons/ci';
 import { IoEye, IoStar } from 'react-icons/io5';
 
+export const generateMetaData = async({params}) =>{
+    const {id} = await params;
+    const news = await getNewsByDetailsById(id);
+
+    return{
+        title: news.title,
+        description: news.details
+    };
+
+
+};
+
 const NewsDetailsPage = async({params}) => {
     const {id} = await params;
     console.log(id);
