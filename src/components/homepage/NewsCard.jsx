@@ -52,11 +52,11 @@ const NewsCard = ({ n }) => {
           <div className="flex justify-between items-center text-center mt-5">
             <div className="flex gap-3 items-center">
               <div className="flex gap-1 text-orange-400">
-                <IoStar />
-                <IoStar />
-                <IoStar />
-                <IoStar />
-                <IoStar />
+                <IoStar className="text-lg" />
+                <IoStar className="text-lg" />
+                <IoStar className="text-lg" />
+                <IoStar className="text-lg" />
+                <IoStar className="text-lg"  />
               </div>
 
               <div>
@@ -66,7 +66,7 @@ const NewsCard = ({ n }) => {
 
             <div className="flex gap-2 items-center">
               <div>
-                <IoEye />
+                <IoEye className="text-lg" />
               </div>
 
               <div>
